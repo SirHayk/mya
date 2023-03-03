@@ -3,52 +3,68 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
-  background-image: url("https://i.imgur.com/pK2x2W4.jpg");
+  background-image: url("https://i.imgur.com/Hc7mfRn.jpg");
   font-family: 'Dancing Script', cursive;
 }
 
-.videocontainer {
-  position: relative;
-  width: 400px;
-  height: 400px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+h3 {
+  font-size: calc(2px + 3vh);
+  line-height: calc(2px + 3vh);
+/*   text-shadow: 0 0 5px #C40FFF, 0 0 15px #C40FFF, 0 0 25px #C40FFF,
+    0 0 20px #C40FFF, 0 0 30px #C40FFF, 0 0 80px #C40FFF, 0 0 80px #C40FFF;
+  color: #A300D9; */
+  text-shadow: 0 0 5px #C40FFF, 0 0 15px #C40FFF, 0 0 20px #C40FFF, 0 0 40px #C40FFF, 0 0 60px #C40FFF, 0 0 10px #C40FFF, 0 0 98px #C40FFF;
+    color: #A300D9;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
 }
-.videocontainer .circle {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
-  border: 4px solid #EC6A5C;
-  z-index: 10;
-  margin: -4px;
+
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #A300D9;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+/*     color: #A300D9;
+    text-shadow: 0 0 5px #A300D9, 0 0 15px #A300D9, 0 0 25px #A300D9,
+      0 0 20px #A300D9, 0 0 30px #A300D9, 0 0 80px #A300D9, 0 0 80px #A300D9; */
+  text-shadow: 0 0 5px #A300D9, 0 0 15px #A300D9, 0 0 20px #A300D9, 0 0 40px #A300D9, 0 0 60px #A300D9, 0 0 10px #A300D9, 0 0 98px #ff0000;
+    color: #A300D9;
+  }
 }
-.videocontainer .knob {
-  width: 40px;
-  height: 40px;
-  background: #AF4034;
-  box-shadow: 2px 2px 35px 0 rgba(0, 0, 0, 0.75);
-  position: absolute;
-  border-radius: 100%;
-  top: 50%;
-  margin-left: -22px;
-  margin-top: -22px;
-  transform: rotate(0deg);
-  transform-origin: 222px 22px;
-  z-index: 20;
-  cursor: grab;
-}
-.videocontainer .playerwrapper {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  border-radius: 100%;
-  overflow: hidden;
-}
-.videocontainer .playerwrapper #player {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+/*     color: #A300D9;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+  text-shadow: 0 0 5px #A300D9, 0 0 15px #A300D9, 0 0 20px #A300D9, 0 0 40px #A300D9, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
 }
